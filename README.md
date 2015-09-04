@@ -8,4 +8,4 @@ The definition of the box is :
 - choose your preference of provisionner (chef, puppet or other)
 
 To build it, I personnaly use the following command
-packer build -var "provisioner=puppet" -only vmware-iso oracle64.json
+    `packer build -var "provisioner=puppet" -only vmware-iso oracle64.json`
