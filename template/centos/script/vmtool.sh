@@ -83,7 +83,7 @@ if [[ $PACKER_BUILDER_TYPE =~ virtualbox ]]; then
     # kernel-headers-$(uname -r) kernel-devel-$(uname -r) gcc make perl
     # from the install media via ks.cfg
 
-    VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
+    VBOX_VERSION=$(cat /home/ariba/.vbox_version)
     mount -o loop $VAGRANT_HOME/VBoxGuestAdditions_$VBOX_VERSION.iso /mnt
     sh /mnt/VBoxLinuxAdditions.run --nox11
     umount /mnt
