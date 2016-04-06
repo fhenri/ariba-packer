@@ -50,6 +50,7 @@
                     <WillShowUI>Never</WillShowUI>
                 </ProductKey>
             </UserData>
+            <EnableFirewall>false</EnableFirewall>
             <ImageInstall>
                 <OSImage>
                     <InstallTo>
