@@ -1,10 +1,6 @@
 #!/bin/bash
 
-if [[ ! "$DESKTOP" =~ ^(true|yes|on|1|TRUE|YES|ON])$ ]]; then
-  exit
-fi
-
-USERNAME=vagrant
+USERNAME=ariba
 
 cat /etc/redhat-release
 if grep -q -i "release 7" /etc/redhat-release ; then

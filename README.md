@@ -9,3 +9,6 @@ The definition of the box is :
 
 To build it, I personnaly use the following command
     `packer build -var "provisioner=puppet" -only vmware-iso oracle64.json`
+
+Add the VM to vagrant
+    `vagrant box add --name ariba/centos7/ansible centos7-ansible-2.4.2.0-vmware-1.0.0.box

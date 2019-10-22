@@ -81,9 +81,10 @@ install_puppet()
 install_ansible()
 {
     echo "==> Installing ansible"
+    REDHAT_MAJOR_VERSION=$(egrep -Eo 'release ([0-9][0-9.]*)' /etc/redhat-release | cut -f2 -d' ' | cut -f1 -d.)
 
     echo "==> Installing EPEL repositories"
-    rpm -ipv "http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm"
+    #yum -y install epel-release
 
     if [[ ${CM_VERSION:-} == 'latest' ]]; then
         echo "==> Installing latest Ansible version"
@@ -120,6 +121,6 @@ case "${CM}" in
     ;;
 
   *)
-    echo "==> Building box without baking in a config management tool"
+    echo "==> Building box without baking in a config management tool ${CM}"
     ;;
 esac
