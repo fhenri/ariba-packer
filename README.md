@@ -11,4 +11,4 @@ To build it, I personnaly use the following command
     `packer build -var "cm=puppet" -var "cm_version=3.8.5" -only vmware-iso centos7.json`
 
 Add the VM to vagrant
-    `vagrant box add --name cloud06/ariba-puppet-centos71 centos7-puppet-3.8.5-vmware-1.0.1.box
+    `vagrant box add --name cloud06/ariba-puppet-centos71 centos7-puppet-3.8.5-vmware-1.0.1.box`
