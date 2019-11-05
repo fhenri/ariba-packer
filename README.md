@@ -8,7 +8,7 @@ The definition of the box is :
 - choose your preference of provisionner (chef, puppet or other)
 
 To build it, I personnaly use the following command
-    `packer build -var "provisioner=puppet" -only vmware-iso oracle64.json`
+    `packer build -var "cm=puppet" -var "cm_version=3.8.5" -only vmware-iso centos7.json`
 
 Add the VM to vagrant
-    `vagrant box add --name ariba/centos7/ansible centos7-ansible-2.4.2.0-vmware-1.0.0.box
+    `vagrant box add --name cloud06/ariba-puppet-centos71 centos7-puppet-3.8.5-vmware-1.0.1.box
